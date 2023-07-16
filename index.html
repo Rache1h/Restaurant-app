@@ -1,0 +1,63 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+<header>
+    <h1>Rachel's Diner</h1>
+    <h2>The best burgers and pizzas in town</h2>
+    </header>
+<main>
+
+
+    <div class="menu-container" id="menu-container">
+        <button class="add-item" id="add-item"></button>
+
+        <!-- menu here -->
+    </div>        
+   
+    <div class="order-container" id="order-container">
+<!-- order here -->
+    </div>
+
+<div class="card-modal">
+    <div>
+        <h3 class="order-header">Enter card details</h3>
+    </div>
+
+    <div class="close-button">
+        <img src="images/icons8-close-50.png">
+    </div>
+
+    <div class="form-modal">
+        <form>
+        <label for="name"></label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" class="input"><br>
+        <label for="card-number"></label>
+        <input type="text" id="number" name="card-number" placeholder="Enter your card number"class="input">
+        <label for="card-cvv"></label><br>
+        <input type="text" id="cvv" name="card-cvv" placeholder="Enter CVV" class="input">
+      </form>
+      <button class="pay-button" id="pay-button">Pay</button>
+    </div>
+</div>
+
+<div class="order-confirmation" id="order-confirmation">
+    <div class="order-wrapper">
+    <h3 class="order-thanks">Thanks,</h3><h3 id="customer-name"></h3><h3>!</h3><p class="p-on-way">Your order is on it's way.</p>
+</div>
+</div>
+
+  
+</main>
+
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
